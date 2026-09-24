@@ -1,0 +1,37 @@
+{
+ "build": "JY-S013-P001/run-0001 (0.1.1-partial candidate)",
+ "environment": {
+  "executor": "claude cowork session 01SaQzDRzMFXvRabmCC6JDJD",
+  "python": "3.11.15",
+  "platform": "Linux-6.18.44-fc-v24-x86_64-with-glibc2.39",
+  "location": "Anthropic cloud container (Linux)"
+ },
+ "checks": [
+  {
+   "id": "baseline-unit-tests",
+   "command": "python3 -m unittest discover -s tests -t .",
+   "result": "PASS 14/14 (baseline 0.1.0-partial)",
+   "captured_at": "2026-09-14T18:56:17.900579+00:00"
+  },
+  {
+   "id": "defect-probes",
+   "command": "PYTHONPATH=. python3 probe.py",
+   "result": "4 findings reproduced on baseline (A014-F1..F4); all clean on candidate",
+   "captured_at": "2026-09-14T18:56:17.900579+00:00"
+  },
+  {
+   "id": "candidate-unit-tests",
+   "command": "python3 -m unittest discover -s tests -t .",
+   "result": "PASS 29/29 (candidate 0.1.1-partial)",
+   "captured_at": "2026-09-14T18:56:17.900579+00:00"
+  }
+ ],
+ "unrun_checks": [
+  "Windows-native launch UNRUN \u2014 no Windows runtime this session",
+  "independent review NOT PERFORMED",
+  "CAP-05 prototype sandbox",
+  "S0-S7 stage gates",
+  "service layers"
+ ],
+ "note": "Evidence current for these inputs on this host only."
+}
