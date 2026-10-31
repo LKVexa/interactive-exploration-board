@@ -98,6 +98,6 @@ or automated decision authority is claimed.
 
 ## License
 
-Copyright 2026 **RUSSELL PHILIP SMITHSON**.
-[Apache License 2.0](LICENSE), with [NOTICE](NOTICE).
+Copyright (C) 2026 **RUSSELL PHILIP SMITHSON**.
+[GNU General Public License, version 3 only (GPL-3.0-only)](LICENSE), with [NOTICE](NOTICE) and [COPYRIGHT](COPYRIGHT).
 No third-party code is vendored.
